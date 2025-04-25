@@ -19,6 +19,15 @@ function addNote() {
      notesContainer.innerHTML = '';
      notes.forEach(note => notesContainer.appendChild(note));
     }
+      // Funktion zum Speichern der Notizen in einer Textdatei
+
+function saveNotes() {
+
+const notesContainer = document.getElementById('notesContainer');
+
+const notes = Array.from(notesContainer.children);
+
+const notesText = notes.map(note => note.textContent).join('\n')
 
 }
        
